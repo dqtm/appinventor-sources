@@ -2369,6 +2369,10 @@ public interface OdeMessages extends Messages {
   @Description("")
   String checkBoxComponentPallette();
 
+  @DefaultMessage("Switch")
+  @Description("")
+  String switchComponentPallette();
+
   @DefaultMessage("Clock")
   @Description("")
   String clockComponentPallette();
@@ -2730,6 +2734,22 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("BackgroundColor")
   @Description("")
   String BackgroundColorProperties();
+
+  @DefaultMessage("ThumbColorActive")
+  @Description("")
+  String ThumbColorActiveProperties();
+
+  @DefaultMessage("ThumbColorInactive")
+  @Description("")
+  String ThumbColorInactiveProperties();
+
+  @DefaultMessage("TrackColorActive")
+  @Description("")
+  String TrackColorActiveProperties();
+
+  @DefaultMessage("TrackColorInactive")
+  @Description("")
+  String TrackColorInactiveProperties();
 
   @DefaultMessage("BackgroundImage")
   @Description("")
@@ -5855,6 +5875,10 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("Checkbox that raises an event when the user clicks on it. There are many properties affecting its appearance that can be set in the Designer or Blocks Editor.")
   @Description("")
   String CheckBoxHelpStringComponentPallette();
+
+  @DefaultMessage("Toggle switch that raises an event when the user clicks on it to change it on or off. There are many properties affecting its appearance that can be set in the Designer or Blocks Editor.")
+  @Description("")
+  String SwitchHelpStringComponentPallette();
 
   @DefaultMessage("Non-visible component that provides the instant in time "
     + "using the internal clock on the phone. It can fire a timer at "
