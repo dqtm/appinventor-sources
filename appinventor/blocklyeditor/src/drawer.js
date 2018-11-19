@@ -46,6 +46,7 @@ Blockly.Drawer = function(parentWorkspace, opt_options) {
     svg.insertBefore(flyoutGroup, this.workspace_.svgGroup_.nextSibling);
   }
   this.flyout_.init(parentWorkspace);
+  this.lastComponent = null;
 };
 
 /**
@@ -120,6 +121,7 @@ Blockly.Drawer.prototype.showComponent = function(instanceName) {
   if (component) {
     this.flyout_.hide();
     this.flyout_.show(this.instanceRecordToXMLArray(component));
+    this.lastComponent = instanceName;
   } else {
     console.log("Got call to Blockly.Drawer.showComponent(" +  instanceName +
                 ") - unknown component name");
@@ -149,6 +151,7 @@ Blockly.Drawer.prototype.showGeneric = function(typeName) {
  * Hide the Drawer flyout
  */
 Blockly.Drawer.prototype.hide = function() {
+  this.lastComponent = null;
   this.flyout_.hide();
 };
 
@@ -224,7 +227,7 @@ Blockly.Drawer.prototype.componentTypeToXMLArray = function(typeName) {
   goog.object.forEach(componentInfo.methodDictionary, function(method, name) {
     if (!method.deprecated) {
       Array.prototype.push.apply(xmlArray, this.blockTypeToXMLArray('component_method', {
-        component_type: typeName, method_name: name
+        component_type: typeName, method_name: name, is_generic: "true"
       }));
     }
   }, this);

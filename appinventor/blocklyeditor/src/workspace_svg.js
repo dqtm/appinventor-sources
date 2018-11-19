@@ -318,9 +318,8 @@ Blockly.WorkspaceSvg.prototype.getProcedureDatabase = function() {
  */
 Blockly.WorkspaceSvg.prototype.addComponent = function(uid, instanceName, typeName) {
   if (this.componentDb_.addInstance(uid, instanceName, typeName)) {
-    return this;
+    this.typeBlock_.needsReload.components = true;
   }
-  this.typeBlock_.needsReload.components = true;
   return this;
 };
 
@@ -333,6 +332,12 @@ Blockly.WorkspaceSvg.prototype.addComponent = function(uid, instanceName, typeNa
  */
 Blockly.WorkspaceSvg.prototype.removeComponent = function(uid) {
   var component = this.componentDb_.getInstance(uid);
+
+  // Fixes #1175
+  if (this.drawer_ && component.name === this.drawer_.lastComponent) {
+    this.drawer_.hide();
+  }
+
   if (!this.componentDb_.removeInstance(uid)) {
     return this;
   }
@@ -478,10 +483,12 @@ Blockly.WorkspaceSvg.prototype.getFlydown = function() {
   return this.flydown_;
 };
 
-Blockly.WorkspaceSvg.prototype.hideChaff = function() {
+Blockly.WorkspaceSvg.prototype.hideChaff = function(opt_allowToolbox) {
   this.flydown_ && this.flydown_.hide();
   this.typeBlock_ && this.typeBlock_.hide();
-  this.backpack_ && this.backpack_.hide();
+  if (!opt_allowToolbox) {  // Fixes #1269
+    this.backpack_ && this.backpack_.hide();
+  }
   this.setScrollbarsVisible(true);
 };
 
@@ -701,6 +708,32 @@ Blockly.WorkspaceSvg.prototype.customContextMenu = function(menuOptions) {
     else if (Blockly.workspace_arranged_latest_position === Blockly.BLKS_VERTICAL)
       arrangeOptionV.callback(opt_type);
   }
+
+  // Enable all blocks
+  var enableAll = {enabled: true};
+  enableAll.text = Blockly.Msg.ENABLE_ALL_BLOCKS;
+  enableAll.callback = function() {
+    var allBlocks = Blockly.mainWorkspace.getAllBlocks();
+    Blockly.Events.setGroup(true);
+    for (var x = 0, block; block = allBlocks[x]; x++) {
+      block.setDisabled(false);
+    }
+    Blockly.Events.setGroup(false);
+  };
+  menuOptions.push(enableAll);
+
+  // Disable all blocks
+  var disableAll = {enabled: true};
+  disableAll.text = Blockly.Msg.DISABLE_ALL_BLOCKS;
+  disableAll.callback = function() {
+    var allBlocks = Blockly.mainWorkspace.getAllBlocks();
+    Blockly.Events.setGroup(true);
+    for (var x = 0, block; block = allBlocks[x]; x++) {
+      block.setDisabled(true);
+    }
+    Blockly.Events.setGroup(false);
+  };
+  menuOptions.push(disableAll);
 
   // Retrieve from backpack option.
   var backpackRetrieve = {enabled: true};
@@ -961,19 +994,31 @@ Blockly.WorkspaceSvg.prototype.requestRender = function(block) {
  * @param {Blockly.BlockSvg=} block
  */
 Blockly.WorkspaceSvg.prototype.requestErrorChecking = function(block) {
+  if (!this.warningHandler_) {
+    return;  // no error checking before warning handler exists
+  }
+  if (this.checkAllBlocks) {
+    return;  // already planning to check all blocks
+  }
   if (!this.pendingErrorCheck) {
     this.needsErrorCheck = [];
     this.pendingErrorBlockIds = {};
+    this.checkAllBlocks = !!block;
     this.pendingErrorCheck = setTimeout(function() {
       try {
         var handler = this.getWarningHandler();
         if (handler) {  // not true for flyouts and before the main workspace is rendered.
-          goog.array.forEach(this.needsErrorCheck, function(block) {
-            handler.checkErrors(block);
-          });
+          goog.array.forEach(this.checkAllBlocks ? this.getAllBlocks() : this.needsErrorCheck,
+            function(block) {
+              handler.checkErrors(block);
+            });
         }
       } finally {
         this.pendingErrorCheck = null;
+        this.checkAllBlocks = false;
+        // Let any disposed blocks be GCed...
+        this.needsErrorCheck = null;
+        this.pendingErrorBlockIds = null;
       }
     }.bind(this));
   }
@@ -990,6 +1035,9 @@ Blockly.WorkspaceSvg.prototype.requestErrorChecking = function(block) {
       }
       Array.prototype.push.apply(pendingBlocks, block.getChildren());
     }
+  } else if (!block) {
+    // schedule all blocks
+    this.checkAllBlocks = true;
   }
 };
 
