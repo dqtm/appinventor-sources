@@ -114,7 +114,7 @@ Blockly.Msg.de.switch_language_to_german = {
     Blockly.ERROR_SELECT_VALID_ITEM_FROM_DROPDOWN = "Wählen Sie einen gültigen Eintrag im Dropdown."; //"Select a valid item in the drop down.";
     Blockly.ERROR_DUPLICATE_EVENT_HANDLER = "Das ist ein duplizierter Ereignis-Handler für diese Komponente."; //This is a duplicate event handler for this component
     Blockly.ERROR_COMPONENT_DOES_NOT_EXIST = "Komponente existiert nicht";
-    Blockly.ERROR_BLOCK_IS_NOT_DEFINED = "Dieser Block ist nicht definiert. Löschen Sie diesen Block!";
+    Blockly.ERROR_BLOCK_IS_NOT_DEFINED = "Dieser Block ist nicht definiert. Diesen Block löschen!";
     Blockly.ERROR_BREAK_ONLY_IN_LOOP = "Der Break-Block sollte nur innerhalb von Schleifen verwendet werden"; //The break block should be used only within loops
 
 // Colour Blocks.
@@ -158,7 +158,7 @@ Blockly.Msg.de.switch_language_to_german = {
     Blockly.Msg.LANG_CONTROLS_IF_MSG_THEN = 'dann';
 
     Blockly.Msg.LANG_CONTROLS_IF_IF_TITLE_IF = 'wenn';
-    Blockly.Msg.LANG_CONTROLS_IF_IF_TOOLTIP = 'Hinzufügen, entfernen oder sortieren von Sektionen,\n' +
+    Blockly.Msg.LANG_CONTROLS_IF_IF_TOOLTIP = 'Sektionen hinzufügen, entfernen oder neu ordnen,\n' +
         'um diesen if-Block neu zu konfigurieren.';
 
     Blockly.Msg.LANG_CONTROLS_IF_ELSEIF_TITLE_ELSEIF = 'sonst wenn';
@@ -798,284 +798,284 @@ Blockly.Msg.de.switch_language_to_german = {
     Blockly.Msg.LANG_LISTS_APPEND_LIST_INPUT_LIST1 = 'Liste1';
     Blockly.Msg.LANG_LISTS_APPEND_LIST_INPUT_LIST2 = 'Liste2';
     Blockly.Msg.LANG_LISTS_APPEND_LIST_INPUT = 'der Liste hinzufügen  Liste1 %1 Liste2 %2';
-    Blockly.Msg.LANG_LISTS_APPEND_LIST_TOOLTIP = 'Fügt alle Einträge in Liste2 dem Ende von Liste1 hinzu. Nach dem '
+    Blockly.Msg.LANG_LISTS_APPEND_LIST_TOOLTIP = 'Fügt alle Einträge der Liste2 am Ende der Liste1 hinzu. Nach dem '
         + 'Hinzufügen enthält Liste1 diese zusätzlichen Elemente, aber Liste2 bleibt unverändert.';
 
     Blockly.Msg.LANG_LISTS_ADD_ITEMS_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/lists#additems';
-    Blockly.Msg.LANG_LISTS_ADD_ITEMS_TITLE_ADD = 'add items to list';
-    Blockly.Msg.LANG_LISTS_ADD_ITEMS_INPUT_LIST = ' list';
-    Blockly.Msg.LANG_LISTS_ADD_ITEMS_INPUT_ITEM = 'item';
-    Blockly.Msg.LANG_LISTS_ADD_ITEMS_INPUT = 'add items to list list %1 item %2';
-    Blockly.Msg.LANG_LISTS_ADD_ITEMS_TOOLTIP = 'Adds items to the end of a list.';
+    Blockly.Msg.LANG_LISTS_ADD_ITEMS_TITLE_ADD = 'Elemente der Liste hinzufügen';
+    Blockly.Msg.LANG_LISTS_ADD_ITEMS_INPUT_LIST = ' Liste';
+    Blockly.Msg.LANG_LISTS_ADD_ITEMS_INPUT_ITEM = 'Element';
+    Blockly.Msg.LANG_LISTS_ADD_ITEMS_INPUT = 'Elemente der Liste hinzufügen Liste %1 Element %2';
+    Blockly.Msg.LANG_LISTS_ADD_ITEMS_TOOLTIP = 'Fügt Elemente am Ende einer Liste hinzu.';
 
-    Blockly.Msg.LANG_LISTS_ADD_ITEMS_CONTAINER_TITLE_ADD = 'list';
-    Blockly.Msg.LANG_LISTS_ADD_ITEMS_CONTAINER_TOOLTIP = 'Add, remove, or reorder sections to reconfigure this list block.';
+    Blockly.Msg.LANG_LISTS_ADD_ITEMS_CONTAINER_TITLE_ADD = 'Liste';
+    Blockly.Msg.LANG_LISTS_ADD_ITEMS_CONTAINER_TOOLTIP = 'Sektionen hinzufügen, entfernen oder neu ordnen, um diesen Listenblock neu zu konfigurieren.';
 
     Blockly.Msg.LANG_LISTS_COPY_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/lists#copy';
-    Blockly.Msg.LANG_LISTS_COPY_TITLE_COPY = 'copy list';
-    Blockly.Msg.LANG_LISTS_COPY_INPUT_LIST = 'list';
-    Blockly.Msg.LANG_LISTS_COPY_TOOLTIP = 'Makes a copy of a list, including copying all sublists';
+    Blockly.Msg.LANG_LISTS_COPY_TITLE_COPY = 'Liste kopieren';
+    Blockly.Msg.LANG_LISTS_COPY_INPUT_LIST = 'Liste';
+    Blockly.Msg.LANG_LISTS_COPY_TOOLTIP = 'Erstellt eine Kopie einer Liste. Kopiert auch alle Teillisten.';
 
     Blockly.Msg.LANG_LISTS_IS_LIST_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/lists#isalist';
-    Blockly.Msg.LANG_LISTS_IS_LIST_TITLE_IS_LIST = 'is a list?';
-    Blockly.Msg.LANG_LISTS_IS_LIST_INPUT_THING = 'thing';
-    Blockly.Msg.LANG_LISTS_IS_LIST_TOOLTIP = 'Tests if something is a list.';
+    Blockly.Msg.LANG_LISTS_IS_LIST_TITLE_IS_LIST = 'ist eine Liste?';
+    Blockly.Msg.LANG_LISTS_IS_LIST_INPUT_THING = 'Ding';
+    Blockly.Msg.LANG_LISTS_IS_LIST_TOOLTIP = 'Testet, ob etwas eine Liste ist.';
 
     Blockly.Msg.LANG_LISTS_TO_CSV_ROW_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/lists#listtocsvrow';
-    Blockly.Msg.LANG_LISTS_TO_CSV_ROW_TITLE_TO_CSV = 'list to csv row';
-    Blockly.Msg.LANG_LISTS_TO_CSV_ROW_INPUT_LIST = 'list';
-    Blockly.Msg.LANG_LISTS_TO_CSV_ROW_TOOLTIP = 'Interprets the list as a row of a table and returns a CSV '
-        + '\(comma-separated value\) text representing the row. Each item in the row list is '
-        + 'considered to be a field, and is quoted with double-quotes in the resulting CSV text. '
-        + 'Items are separated by commas. The returned row text does not have a line separator at '
-        + 'the end.';
+    Blockly.Msg.LANG_LISTS_TO_CSV_ROW_TITLE_TO_CSV = 'Liste in csv Zeile';
+    Blockly.Msg.LANG_LISTS_TO_CSV_ROW_INPUT_LIST = 'Liste';
+    Blockly.Msg.LANG_LISTS_TO_CSV_ROW_TOOLTIP = 'Interpretiert die Liste als eine Zeile in einer Tabelle und gibt ein CSV '
+        + '\(mit Komma getrennte Werte\) Text zurück, der der Zeile entspricht. Jedes Element in der Zeilenliste wird '
+        + 'als Feld betrachtet und ist mit Anführungszeichen im resultierenden CSV Text zitiert. '
+        + 'Elemente sind mittels Komma getrennt. Der zurückgegebene Zeilentext hat keine Zeilentrennung '
+        + 'am Ende.';
 
     Blockly.Msg.LANG_LISTS_FROM_CSV_ROW_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/lists#listfromcsvrow';
-    Blockly.Msg.LANG_LISTS_FROM_CSV_ROW_TITLE_FROM_CSV = 'list from csv row';
-    Blockly.Msg.LANG_LISTS_FROM_CSV_ROW_INPUT_TEXT = 'text';
-    Blockly.Msg.LANG_LISTS_FROM_CSV_ROW_TOOLTIP = 'Parses a text as a CSV \(comma-separated value\) formatted '
-        + 'row to produce a list of fields. It is an error for the row text to contain unescaped '
-        + 'newlines inside fields \(effectively, multiple lines\). It is okay for the row text to '
-        + 'end in a single newline or CRLF.';
+    Blockly.Msg.LANG_LISTS_FROM_CSV_ROW_TITLE_FROM_CSV = 'List aus csv Zeile';
+    Blockly.Msg.LANG_LISTS_FROM_CSV_ROW_INPUT_TEXT = 'Text';
+    Blockly.Msg.LANG_LISTS_FROM_CSV_ROW_TOOLTIP = 'Konvertiert eine CSV formattierte Textzeile \(mit Komma getrennte Werte\), '
+        + 'um eine Liste von Feldern zu erstellen. Enthält ein Zeilentext innerhalb eines Feldes Zeilenumbrüche ohne '
+        + 'Escape-Zeichen \(d.h. mehrere Zeilen\), wird er als Fehler gekennzeichnet. Ein einziger Zeilenumbruch oder '
+        + 'CRLF am Ende eines Zeilentextes ist zugelassen.';
 
     Blockly.Msg.LANG_LISTS_TO_CSV_TABLE_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/lists#listtocsvtable';
-    Blockly.Msg.LANG_LISTS_TO_CSV_TABLE_TITLE_TO_CSV = 'list to csv table';
-    Blockly.Msg.LANG_LISTS_TO_CSV_TABLE_INPUT_LIST = 'list';
-    Blockly.Msg.LANG_LISTS_TO_CSV_TABLE_TOOLTIP = 'Interprets the list as a table in row-major format and '
-        + 'returns a CSV \(comma-separated value\) text representing the table. Each item in the '
-        + 'list should itself be a list representing a row of the CSV table. Each item in the row '
-        + 'list is considered to be a field, and is quoted with double-quotes in the resulting CSV '
-        + 'text. In the returned text, items in rows are separated by commas and rows are '
-        + 'separated by CRLF \(\\r\\n\).';
+    Blockly.Msg.LANG_LISTS_TO_CSV_TABLE_TITLE_TO_CSV = 'Liste in csv Tabelle';
+    Blockly.Msg.LANG_LISTS_TO_CSV_TABLE_INPUT_LIST = 'Liste';
+    Blockly.Msg.LANG_LISTS_TO_CSV_TABLE_TOOLTIP = 'Interpretiert die Liste als Tabelle in zeilendominierter Formatierung und ' //Interprets the list as a table in row-major format and
+        + 'gibt ein CSV \(mit Komma getrennte Werte\) Text zurück, der der Tabelle entspricht. Jedes Element in der '
+        + 'Liste sollte selbst eine Liste sein, die einer Zeile innerhalb der CSV Tabelle entspricht.  Jedes Element in der '
+        + 'Zeilenliste wird als Feld betrachtet und ist mit Anführungszeichen im resultierenden CSV Text zitiert. '
+        + 'Im zurückgegebenen Text sind Elemente in Zeilen mittels Komma getrennt und Zeilen sind mittels '
+        + 'CRLF getrennt \(\\r\\n\).';
 
     Blockly.Msg.LANG_LISTS_FROM_CSV_TABLE_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/lists#listfromcsvtable';
-    Blockly.Msg.LANG_LISTS_FROM_CSV_TABLE_TITLE_FROM_CSV = 'list from csv table';
-    Blockly.Msg.LANG_LISTS_FROM_CSV_TABLE_INPUT_TEXT = 'text';
-    Blockly.Msg.LANG_LISTS_FROM_CSV_TABLE_TOOLTIP = 'Parses a text as a CSV \(comma-separated value\) formatted '
-        + 'table to produce a list of rows, each of which is a list of fields. Rows can be '
-        + 'separated by newlines \(\\n\) or CRLF \(\\r\\n\).';
+    Blockly.Msg.LANG_LISTS_FROM_CSV_TABLE_TITLE_FROM_CSV = 'Liste aus csv Tabelle';
+    Blockly.Msg.LANG_LISTS_FROM_CSV_TABLE_INPUT_TEXT = 'Text';
+    Blockly.Msg.LANG_LISTS_FROM_CSV_TABLE_TOOLTIP = 'Konvertiert ein Text, der einer CSV \(mit Komma getrennte Werte\) formattierten '
+        + 'Tabelle entspricht, um eine Liste von Zeilen zu erstellen. Jede Zeile entspricht einer Liste von Feldern. Zeilen können '
+        + 'mittels Zeilenumbrüche \(\\n\) oder CRLF \(\\r\\n\) getrennt sein.';
 
     Blockly.Msg.LANG_LISTS_INSERT_ITEM_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/lists#insert';
-    Blockly.Msg.LANG_LISTS_INSERT_TITLE_INSERT_LIST = 'insert list item';
-    Blockly.Msg.LANG_LISTS_INSERT_INPUT_LIST = 'list';
-    Blockly.Msg.LANG_LISTS_INSERT_INPUT_INDEX = 'index';
-    Blockly.Msg.LANG_LISTS_INSERT_INPUT_ITEM = 'item';
-    Blockly.Msg.LANG_LISTS_INSERT_INPUT = 'insert list item  list %1 index %2 item %3';
-    Blockly.Msg.LANG_LISTS_INSERT_TOOLTIP = 'Insert an item into a list at the specified position.';
+    Blockly.Msg.LANG_LISTS_INSERT_TITLE_INSERT_LIST = 'Listenelement einfügen';
+    Blockly.Msg.LANG_LISTS_INSERT_INPUT_LIST = 'Liste';
+    Blockly.Msg.LANG_LISTS_INSERT_INPUT_INDEX = 'Index';
+    Blockly.Msg.LANG_LISTS_INSERT_INPUT_ITEM = 'Element';
+    Blockly.Msg.LANG_LISTS_INSERT_INPUT = 'Listenelement einfügen  Liste %1 Index %2 Element %3';
+    Blockly.Msg.LANG_LISTS_INSERT_TOOLTIP = 'Ein Element in eine Liste an der definierten Position einfügen.';
 
     Blockly.Msg.LANG_LISTS_IS_EMPTY_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/lists#islistempty';
-    Blockly.Msg.LANG_LISTS_TITLE_IS_EMPTY = 'is list empty?';
-    Blockly.Msg.LANG_LISTS_INPUT_LIST = 'list';
-    Blockly.Msg.LANG_LISTS_IS_EMPTY_TOOLTIP = 'Returns true if the list is empty.';
+    Blockly.Msg.LANG_LISTS_TITLE_IS_EMPTY = 'ist Liste leer?';
+    Blockly.Msg.LANG_LISTS_INPUT_LIST = 'Liste';
+    Blockly.Msg.LANG_LISTS_IS_EMPTY_TOOLTIP = 'Gibt wahr (true) zurück, wenn die Liste leer ist.';
 
     Blockly.Msg.LANG_LISTS_LOOKUP_IN_PAIRS_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/lists#lookuppairs';
-    Blockly.Msg.LANG_LISTS_LOOKUP_IN_PAIRS_TITLE_LOOKUP_IN_PAIRS = 'look up in pairs';
-    Blockly.Msg.LANG_LISTS_LOOKUP_IN_PAIRS_INPUT_KEY = 'key';
-    Blockly.Msg.LANG_LISTS_LOOKUP_IN_PAIRS_INPUT_PAIRS = 'pairs';
-    Blockly.Msg.LANG_LISTS_LOOKUP_IN_PAIRS_INPUT_NOT_FOUND = 'notFound';
-    Blockly.Msg.LANG_LISTS_LOOKUP_IN_PAIRS_INPUT = 'look up in pairs  key %1 pairs %2 notFound %3';
-    Blockly.Msg.LANG_LISTS_LOOKUP_IN_PAIRS_TOOLTIP = 'Returns the value associated with the key in the list of pairs';
+    Blockly.Msg.LANG_LISTS_LOOKUP_IN_PAIRS_TITLE_LOOKUP_IN_PAIRS = 'in Paare nachschlagen';
+    Blockly.Msg.LANG_LISTS_LOOKUP_IN_PAIRS_INPUT_KEY = 'Schlüssel';
+    Blockly.Msg.LANG_LISTS_LOOKUP_IN_PAIRS_INPUT_PAIRS = 'Paare';
+    Blockly.Msg.LANG_LISTS_LOOKUP_IN_PAIRS_INPUT_NOT_FOUND = 'nichtGefunden';
+    Blockly.Msg.LANG_LISTS_LOOKUP_IN_PAIRS_INPUT = 'in Paare nachschlagen  Schlüssel %1 Paare %2 nichtGefunden %3';
+    Blockly.Msg.LANG_LISTS_LOOKUP_IN_PAIRS_TOOLTIP = 'Gibt aus der Liste von Paare den Wert zurück, der dem Schlüssel zugeordnet wird';
 
 // Variables Blocks.
     Blockly.Msg.LANG_VARIABLES_GLOBAL_DECLARATION_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/variables#global';
-    Blockly.Msg.LANG_VARIABLES_GLOBAL_DECLARATION_TITLE_INIT = 'initialize global';
-    Blockly.Msg.LANG_VARIABLES_GLOBAL_DECLARATION_NAME = 'name';
-    Blockly.Msg.LANG_VARIABLES_GLOBAL_DECLARATION_TO = 'to';
+    Blockly.Msg.LANG_VARIABLES_GLOBAL_DECLARATION_TITLE_INIT = 'global initialisieren';
+    Blockly.Msg.LANG_VARIABLES_GLOBAL_DECLARATION_NAME = 'Name';
+    Blockly.Msg.LANG_VARIABLES_GLOBAL_DECLARATION_TO = 'bis';
     Blockly.Msg.LANG_VARIABLES_GLOBAL_DECLARATION_COLLAPSED_TEXT = 'global';
-    Blockly.Msg.LANG_VARIABLES_GLOBAL_DECLARATION_TOOLTIP = 'Creates a global variable and gives it the value of the attached blocks.';
+    Blockly.Msg.LANG_VARIABLES_GLOBAL_DECLARATION_TOOLTIP = 'Erstellt eine globale Variable und weist ihr den Wert der eingefügten Blöcke zu.';
 
     Blockly.Msg.LANG_VARIABLES_GET_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/variables#get';
-    Blockly.Msg.LANG_VARIABLES_GET_TITLE_GET = 'get';
-    Blockly.Msg.LANG_VARIABLES_GET_COLLAPSED_TEXT = 'get';
-    Blockly.Msg.LANG_VARIABLES_GET_TOOLTIP = 'Returns the value of this variable.';
+    Blockly.Msg.LANG_VARIABLES_GET_TITLE_GET = 'gib';
+    Blockly.Msg.LANG_VARIABLES_GET_COLLAPSED_TEXT = 'gib';
+    Blockly.Msg.LANG_VARIABLES_GET_TOOLTIP = 'Gibt den Wert dieser Variable zurück.';
 
     Blockly.Msg.LANG_VARIABLES_SET_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/variables#set';
-    Blockly.Msg.LANG_VARIABLES_SET_TITLE_SET = 'set';
-    Blockly.Msg.LANG_VARIABLES_SET_TITLE_TO = 'to';
-    Blockly.Msg.LANG_VARIABLES_SET_COLLAPSED_TEXT = 'set';
-    Blockly.Msg.LANG_VARIABLES_SET_TOOLTIP = 'Sets this variable to be equal to the input.';
-    Blockly.Msg.LANG_VARIABLES_VARIABLE = ' variable';
+    Blockly.Msg.LANG_VARIABLES_SET_TITLE_SET = 'schreibe';
+    Blockly.Msg.LANG_VARIABLES_SET_TITLE_TO = '';
+    Blockly.Msg.LANG_VARIABLES_SET_COLLAPSED_TEXT = 'schreibe';
+    Blockly.Msg.LANG_VARIABLES_SET_TOOLTIP = 'Setze diese Variable so dass sie den gleichen Wert wie die Eingabe hat.';
+    Blockly.Msg.LANG_VARIABLES_VARIABLE = ' Variable';
 
     Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/variables#do';
-    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_TITLE_INIT = 'initialize local';
-    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_DEFAULT_NAME = 'name';
-    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_INPUT_TO = 'to';
+    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_TITLE_INIT = 'lokal initialisieren';
+    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_DEFAULT_NAME = 'Name';
+    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_INPUT_TO = 'auf';
     Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_IN_DO = 'in';
-    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_COLLAPSED_TEXT = 'local';
-    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_TOOLTIP = 'Allows you to create variables that are only accessible in the do part of this block.';
-    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_TRANSLATED_NAME = 'initialize local in do';
+    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_COLLAPSED_TEXT = 'lokal';
+    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_TOOLTIP = 'Erlaubt das Erstellen von Variablen, die nur innerhalb des mache-Teil dieses Blockes erreichbar sind.';
+    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_TRANSLATED_NAME = 'initialisiere lokal in mache';
 
     Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_EXPRESSION_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/variables#return';
     Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_EXPRESSION_IN_RETURN = 'in';
-    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_EXPRESSION_COLLAPSED_TEXT = 'local';
-    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_EXPRESSION_TOOLTIP = 'Allows you to create variables that are only accessible in the return part of this block.';
-    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_EXPRESSION_TRANSLATED_NAME = 'initialize local in return';
+    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_EXPRESSION_COLLAPSED_TEXT = 'lokal';
+    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_EXPRESSION_TOOLTIP = 'Erlaubt das Erstellen von Variablen, die nur innerhalb der Rückgabe dieses Blockes erreichbar sind.';
+    Blockly.Msg.LANG_VARIABLES_LOCAL_DECLARATION_EXPRESSION_TRANSLATED_NAME = 'initialisiere lokal in Rückgabe';
 
-    Blockly.Msg.LANG_VARIABLES_LOCAL_MUTATOR_CONTAINER_TITLE_LOCAL_NAMES = 'local names';
+    Blockly.Msg.LANG_VARIABLES_LOCAL_MUTATOR_CONTAINER_TITLE_LOCAL_NAMES = 'lokale Namen';
     Blockly.Msg.LANG_VARIABLES_LOCAL_MUTATOR_CONTAINER_TOOLTIP = '';
 
-    Blockly.Msg.LANG_VARIABLES_LOCAL_MUTATOR_ARG_TITLE_NAME = 'name';
+    Blockly.Msg.LANG_VARIABLES_LOCAL_MUTATOR_ARG_TITLE_NAME = 'Name';
     Blockly.Msg.LANG_VARIABLES_LOCAL_MUTATOR_ARG_DEFAULT_VARIABLE = 'x';
 
 // Procedures Blocks.
     Blockly.Msg.LANG_PROCEDURES_DEFNORETURN_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/procedures#do';
-    Blockly.Msg.LANG_PROCEDURES_DEFNORETURN_DEFINE = 'to';
-    Blockly.Msg.LANG_PROCEDURES_DEFNORETURN_PROCEDURE = 'procedure';
-    Blockly.Msg.LANG_PROCEDURES_DEFNORETURN_DO = 'do';
-    Blockly.Msg.LANG_PROCEDURES_DEFNORETURN_COLLAPSED_PREFIX = 'to ';
-    Blockly.Msg.LANG_PROCEDURES_DEFNORETURN_TOOLTIP = 'A procedure that does not return a value.';
+    Blockly.Msg.LANG_PROCEDURES_DEFNORETURN_DEFINE = 'nach';
+    Blockly.Msg.LANG_PROCEDURES_DEFNORETURN_PROCEDURE = 'Prozedur';
+    Blockly.Msg.LANG_PROCEDURES_DEFNORETURN_DO = 'mache';
+    Blockly.Msg.LANG_PROCEDURES_DEFNORETURN_COLLAPSED_PREFIX = 'nach ';
+    Blockly.Msg.LANG_PROCEDURES_DEFNORETURN_TOOLTIP = 'Eine Prozedur, die keinen Wert zurückgibt.';
 
     Blockly.Msg.LANG_PROCEDURES_DOTHENRETURN_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/procedures#doreturn';
-    Blockly.Msg.LANG_PROCEDURES_DOTHENRETURN_THEN_RETURN = 'result';
-    Blockly.Msg.LANG_PROCEDURES_DOTHENRETURN_DO = 'do';
-    Blockly.Msg.LANG_PROCEDURES_DOTHENRETURN_RETURN = 'result';
-    Blockly.Msg.LANG_PROCEDURES_DOTHENRETURN_TOOLTIP = 'Runs the blocks in \'do\' and returns a statement. Useful if you need to run a procedure before returning a value to a variable.';
-    Blockly.Msg.LANG_PROCEDURES_DOTHENRETURN_COLLAPSED_TEXT = 'do/result';
+    Blockly.Msg.LANG_PROCEDURES_DOTHENRETURN_THEN_RETURN = 'Resultat';
+    Blockly.Msg.LANG_PROCEDURES_DOTHENRETURN_DO = 'mache';
+    Blockly.Msg.LANG_PROCEDURES_DOTHENRETURN_RETURN = 'Resultat';
+    Blockly.Msg.LANG_PROCEDURES_DOTHENRETURN_TOOLTIP = 'Führt die Blöcke in \'mache\' aus und gibt eine Anweisung zurück. Nützlich wenn eine Prozedur ausgeführt werden soll, bevor einer Variable ein Wert zurückgegeben wird.';
+    Blockly.Msg.LANG_PROCEDURES_DOTHENRETURN_COLLAPSED_TEXT = 'mache/Resultat';
 
     Blockly.Msg.LANG_PROCEDURES_DEFRETURN_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/procedures#return';
-    Blockly.Msg.LANG_PROCEDURES_DEFRETURN_DEFINE = 'to';
+    Blockly.Msg.LANG_PROCEDURES_DEFRETURN_DEFINE = 'nach';
     Blockly.Msg.LANG_PROCEDURES_DEFRETURN_PROCEDURE = Blockly.Msg.LANG_PROCEDURES_DEFNORETURN_PROCEDURE;
     Blockly.Msg.LANG_PROCEDURES_DEFRETURN_DO = Blockly.Msg.LANG_PROCEDURES_DEFNORETURN_DO;
-    Blockly.Msg.LANG_PROCEDURES_DEFRETURN_RETURN = 'result';
-    Blockly.Msg.LANG_PROCEDURES_DEFRETURN_COLLAPSED_PREFIX = 'to ';
-    Blockly.Msg.LANG_PROCEDURES_DEFRETURN_TOOLTIP = 'A procedure returning a result value.';
+    Blockly.Msg.LANG_PROCEDURES_DEFRETURN_RETURN = 'Resultat';
+    Blockly.Msg.LANG_PROCEDURES_DEFRETURN_COLLAPSED_PREFIX = 'nach ';
+    Blockly.Msg.LANG_PROCEDURES_DEFRETURN_TOOLTIP = 'Eine Prozedur, die ein Resultat zurückgibt.';
 
-    Blockly.Msg.LANG_PROCEDURES_DEF_DUPLICATE_WARNING = 'Warning:\n' +
-        'This procedure has\n' +
-        'duplicate inputs.';
+    Blockly.Msg.LANG_PROCEDURES_DEF_DUPLICATE_WARNING = 'Warnung:\n' +
+        'Diese Prozedur hat\n' +
+        'duplizierte Eingaben.';
 
     Blockly.Msg.LANG_PROCEDURES_GET_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/procedures#get';
 
     Blockly.Msg.LANG_PROCEDURES_CALLNORETURN_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/procedures#do';
-    Blockly.Msg.LANG_PROCEDURES_CALLNORETURN_CALL = 'call ';
-    Blockly.Msg.LANG_PROCEDURES_CALLNORETURN_PROCEDURE = 'procedure';
-    Blockly.Msg.LANG_PROCEDURES_CALLNORETURN_COLLAPSED_PREFIX = 'call ';
-    Blockly.Msg.LANG_PROCEDURES_CALLNORETURN_TOOLTIP = 'Call a procedure with no return value.';
-    Blockly.Msg.LANG_PROCEDURES_CALLNORETURN_TRANSLATED_NAME = 'call no return';
+    Blockly.Msg.LANG_PROCEDURES_CALLNORETURN_CALL = 'aufrufen ';
+    Blockly.Msg.LANG_PROCEDURES_CALLNORETURN_PROCEDURE = 'Prozedur';
+    Blockly.Msg.LANG_PROCEDURES_CALLNORETURN_COLLAPSED_PREFIX = 'aufrufen ';
+    Blockly.Msg.LANG_PROCEDURES_CALLNORETURN_TOOLTIP = 'Eine Prozedur ohne Rückgabewert aufrufen.';
+    Blockly.Msg.LANG_PROCEDURES_CALLNORETURN_TRANSLATED_NAME = 'aufrufen ohne Rückgabe';
 
     Blockly.Msg.LANG_PROCEDURES_CALLRETURN_HELPURL = 'http://appinventor.mit.edu/explore/ai2/support/blocks/procedures#return';
     Blockly.Msg.LANG_PROCEDURES_CALLRETURN_CALL = Blockly.Msg.LANG_PROCEDURES_CALLNORETURN_CALL;
     Blockly.Msg.LANG_PROCEDURES_CALLRETURN_PROCEDURE = Blockly.Msg.LANG_PROCEDURES_CALLNORETURN_PROCEDURE;
-    Blockly.Msg.LANG_PROCEDURES_CALLRETURN_COLLAPSED_PREFIX = 'call ';
-    Blockly.Msg.LANG_PROCEDURES_CALLRETURN_TOOLTIP = 'Call a procedure with a return value.';
-    Blockly.Msg.LANG_PROCEDURES_CALLRETURN_TRANSLATED_NAME = 'call return';
+    Blockly.Msg.LANG_PROCEDURES_CALLRETURN_COLLAPSED_PREFIX = 'aufrufen ';
+    Blockly.Msg.LANG_PROCEDURES_CALLRETURN_TOOLTIP = 'Eine Prozedur mit einem Rückgabewert aufrufen.';
+    Blockly.Msg.LANG_PROCEDURES_CALLRETURN_TRANSLATED_NAME = 'aufrufen mit Rückgabe';
 
-    Blockly.Msg.LANG_PROCEDURES_MUTATORCONTAINER_TITLE = 'inputs';
-    Blockly.Msg.LANG_PROCEDURES_MUTATORARG_TITLE = 'input:';
+    Blockly.Msg.LANG_PROCEDURES_MUTATORCONTAINER_TITLE = 'Eingaben';
+    Blockly.Msg.LANG_PROCEDURES_MUTATORARG_TITLE = 'Eingabe:';
 
-    Blockly.Msg.LANG_PROCEDURES_HIGHLIGHT_DEF = 'Highlight Procedure';
+    Blockly.Msg.LANG_PROCEDURES_HIGHLIGHT_DEF = 'Prozedur hervorheben';
 
     Blockly.Msg.LANG_PROCEDURES_MUTATORCONTAINER_TOOLTIP = '';
     Blockly.Msg.LANG_PROCEDURES_MUTATORARG_TOOLTIP = '';
 
 // Components Blocks.
-    Blockly.Msg.UNDEFINED_BLOCK_TOOLTIP = "This block is not defined. Delete this block!";
+    Blockly.Msg.UNDEFINED_BLOCK_TOOLTIP = "Dieser Block ist nicht definiert. Diesen Block löschen!";
 
     Blockly.Msg.LANG_COMPONENT_BLOCK_HELPURL = '';
-    Blockly.Msg.LANG_COMPONENT_BLOCK_TITLE_WHEN = 'when ';
-    Blockly.Msg.LANG_COMPONENT_BLOCK_TITLE_DO = 'do';
+    Blockly.Msg.LANG_COMPONENT_BLOCK_TITLE_WHEN = 'wenn ';
+    Blockly.Msg.LANG_COMPONENT_BLOCK_TITLE_DO = 'mache';
 
     Blockly.Msg.LANG_COMPONENT_BLOCK_METHOD_HELPURL = '';
-    Blockly.Msg.LANG_COMPONENT_BLOCK_METHOD_TITLE_CALL = 'call ';
+    Blockly.Msg.LANG_COMPONENT_BLOCK_METHOD_TITLE_CALL = 'aufrufen ';
 
     Blockly.Msg.LANG_COMPONENT_BLOCK_GENERIC_METHOD_HELPURL = '';
-    Blockly.Msg.LANG_COMPONENT_BLOCK_GENERIC_METHOD_TITLE_CALL = 'call ';
-    Blockly.Msg.LANG_COMPONENT_BLOCK_GENERIC_METHOD_TITLE_FOR_COMPONENT = 'for component';
+    Blockly.Msg.LANG_COMPONENT_BLOCK_GENERIC_METHOD_TITLE_CALL = 'aufrufen ';
+    Blockly.Msg.LANG_COMPONENT_BLOCK_GENERIC_METHOD_TITLE_FOR_COMPONENT = 'für Komponente';
 
     Blockly.Msg.LANG_COMPONENT_BLOCK_GETTER_HELPURL = '';
 
     Blockly.Msg.LANG_COMPONENT_BLOCK_GENERIC_GETTER_HELPURL = '';
-    Blockly.Msg.LANG_COMPONENT_BLOCK_GENERIC_GETTER_TITLE_OF_COMPONENT = 'of component';
+    Blockly.Msg.LANG_COMPONENT_BLOCK_GENERIC_GETTER_TITLE_OF_COMPONENT = 'von Komponente';
 
     Blockly.Msg.LANG_COMPONENT_BLOCK_SETTER_HELPURL = '';
-    Blockly.Msg.LANG_COMPONENT_BLOCK_SETTER_TITLE_SET = 'set ';
-    Blockly.Msg.LANG_COMPONENT_BLOCK_SETTER_TITLE_TO = ' to';
+    Blockly.Msg.LANG_COMPONENT_BLOCK_SETTER_TITLE_SET = 'schreibe ';
+    Blockly.Msg.LANG_COMPONENT_BLOCK_SETTER_TITLE_TO = '';
 
     Blockly.Msg.LANG_COMPONENT_BLOCK_GENERIC_SETTER_HELPURL = '';
-    Blockly.Msg.LANG_COMPONENT_BLOCK_GENERIC_SETTER_TITLE_SET = 'set ';
-    Blockly.Msg.LANG_COMPONENT_BLOCK_GENERIC_SETTER_TITLE_TO = ' to';
-    Blockly.Msg.LANG_COMPONENT_BLOCK_GENERIC_SETTER_TITLE_OF_COMPONENT = 'of component';
+    Blockly.Msg.LANG_COMPONENT_BLOCK_GENERIC_SETTER_TITLE_SET = 'schreibe ';
+    Blockly.Msg.LANG_COMPONENT_BLOCK_GENERIC_SETTER_TITLE_TO = '';
+    Blockly.Msg.LANG_COMPONENT_BLOCK_GENERIC_SETTER_TITLE_OF_COMPONENT = 'von Komponente';
 
 
 //Misc
-    Blockly.Msg.SHOW_WARNINGS = "Show Warnings";
-    Blockly.Msg.HIDE_WARNINGS = "Hide Warnings";
-    Blockly.Msg.MISSING_SOCKETS_WARNINGS = "You should fill all of the sockets with blocks";
-    Blockly.Msg.WRONG_TYPE_BLOCK_WARINGS = "This block should be connected to an event block or a procedure definition";
+    Blockly.Msg.SHOW_WARNINGS = "Warnungen einblenden";
+    Blockly.Msg.HIDE_WARNINGS = "Warnungen ausblenden";
+    Blockly.Msg.MISSING_SOCKETS_WARNINGS = "Alle Steckplätze sollten mit Blöcken befüllt werden";
+    Blockly.Msg.WRONG_TYPE_BLOCK_WARINGS = "Dieser Block sollte mit einem Ereignis Block oder einer Prozedur Definition verbunden sein";
 
 // Messages from replmgr.js
-    Blockly.Msg.REPL_ERROR_FROM_COMPANION = "Error from Companion";
-    Blockly.Msg.REPL_NETWORK_CONNECTION_ERROR = "Network Connection Error";
-    Blockly.Msg.REPL_NETWORK_ERROR = "Network Error";
-    Blockly.Msg.REPL_NETWORK_ERROR_RESTART = "Network Error Communicating with Companion.<br />Try restarting the Companion and reconnecting";
+    Blockly.Msg.REPL_ERROR_FROM_COMPANION = "Fehler vom Companion";
+    Blockly.Msg.REPL_NETWORK_CONNECTION_ERROR = "Netzwerkverbindungsfehler";
+    Blockly.Msg.REPL_NETWORK_ERROR = "Netzwerkfehler";
+    Blockly.Msg.REPL_NETWORK_ERROR_RESTART = "Netzwerkfehler in der Kommunikation mit dem Companion.<br />Versuchen Sie, den Companion neuzustarten und neu zu verbinden";
     Blockly.Msg.REPL_OK = "OK";
-    Blockly.Msg.REPL_COMPANION_VERSION_CHECK = "Companion Version Check";
-    Blockly.Msg.REPL_COMPANION_OUT_OF_DATE = 'Your Companion App is out of date. Click "OK" to start the update. Watch your ';
-    Blockly.Msg.REPL_EMULATORS = "emulator's";
-    Blockly.Msg.REPL_DEVICES = "device's";
-    Blockly.Msg.REPL_APPROVE_UPDATE = " screen because you will be asked to approve the update.";
-    Blockly.Msg.REPL_NOT_NOW = "Not Now";
-    Blockly.Msg.REPL_COMPANION_OUT_OF_DATE1 = "The Companion you are using is out of date.<br/><br/>This Version of App Inventor should be used with Companion version";
-    Blockly.Msg.REPL_COMPANION_OUT_OF_DATE_IMMEDIATE = "You are using an out-of-date Companion. You should update the MIT AI2 Companion as soon as possible. If you have auto-update setup in the store, the update will happen by itself shortly.";
-    Blockly.Msg.REPL_COMPANION_WRONG_PACKAGE = "The Companion you are using was built for different instance of App Inventor. To obtain the correct companion look on the App Inventor screen under Help->Companion Information menu.";
-    Blockly.Msg.REPL_DISMISS = "Dismiss";
+    Blockly.Msg.REPL_COMPANION_VERSION_CHECK = "Companion Version Prüfung";
+    Blockly.Msg.REPL_COMPANION_OUT_OF_DATE = 'Ihre Companion App ist veraltet. Klicken Sie "OK", um den Update zu starten. Achten Sie auf Ihren ';
+    Blockly.Msg.REPL_EMULATORS = "Emulator";
+    Blockly.Msg.REPL_DEVICES = "Geräte";
+    Blockly.Msg.REPL_APPROVE_UPDATE = " Bildschirm, da Sie gebeten werden, den Update zu bestätigen.";
+    Blockly.Msg.REPL_NOT_NOW = "Nicht jetzt";
+    Blockly.Msg.REPL_COMPANION_OUT_OF_DATE1 = "Der Companion den Sie nutzen ist veraltet.<br/><br/>Diese Version des App Inventor sollte mit der folgenden Companion Version verwendet werden:";
+    Blockly.Msg.REPL_COMPANION_OUT_OF_DATE_IMMEDIATE = "Sie verwenden einen veralteten Companion. Sie sollten den MIT AI2 Companion baldmöglichst aktualisieren. Falls Sie Auto-Updates im Store aktiviert haben, wird der Update bald selbstständig erfolgen.";
+    Blockly.Msg.REPL_COMPANION_WRONG_PACKAGE = "Der Companion den Sie verwenden wurde für eine andere Instanz des App Inventor gebaut. Um den korrekten Companion zu erhalten, schauen Sie im App Inventor Bildschirm im Menü unter Hilfe->Companion Information.";
+    Blockly.Msg.REPL_DISMISS = "Schliessen";
     Blockly.Msg.REPL_SOFTWARE_UPDATE = "Software Update";
     Blockly.Msg.REPL_OK_LOWER = "Ok";
-    Blockly.Msg.REPL_GOT_IT = "Got It";
-    Blockly.Msg.REPL_UPDATE_INFO = 'The update is now being installed on your device. Watch your device (or emulator) screen and approve the software installation when prompted.<br /><br />IMPORTANT: When the update finishes, choose "DONE" (don\'t click "open"). Then go to App Inventor in your web browser, click the "Connect" menu and choose "Reset Connection".  Then reconnect the device.';
+    Blockly.Msg.REPL_GOT_IT = "Verstanden";
+    Blockly.Msg.REPL_UPDATE_INFO = 'Das Update wird nun auf Ihrem Gerät installiert. Achten Sie auf Ihren Geräte- oder Emulatorbildschirm und, wenn aufgefordert, bestätigen Sie die Software Installation.<br /><br />WICHTIG: Wenn das Update fertig ist, wählen Sie "FERTIG" \(Klicken Sie nicht auf "öffnen"\). Gehen Sie dann zum App Inventor in Ihrem Browser, klicken Sie auf das "Verbinden"-Menü und wählen Sie "Verbindung zurücksetzen". Dann verbinden Sie das Gerät erneut.';
 
-    Blockly.Msg.REPL_UPDATE_NO_UPDATE = "No Update is Available";
-    Blockly.Msg.REPL_UPDATE_NO_CONNECTION = "You must be connected to a Companion to update it";
-    Blockly.Msg.REPL_UNABLE_TO_UPDATE = "Unable to send update to device/emulator";
-    Blockly.Msg.REPL_UNABLE_TO_LOAD = "Unable to load update from App Inventor server";
-    Blockly.Msg.REPL_UNABLE_TO_LOAD_NO_RESPOND = "Unable to load update from App Inventor server (server not responding)";
-    Blockly.Msg.REPL_NOW_DOWNLOADING = "We are now downloading update from the App Inventor Server, please standby";
-    Blockly.Msg.REPL_RUNTIME_ERROR = "Runtime Error";
-    Blockly.Msg.REPL_NO_ERROR_FIVE_SECONDS = "<br/><i>Note:</i>&nbsp;You will not see another error reported for 5 seconds.";
-    Blockly.Msg.REPL_CONNECTING_USB_CABLE = "Connecting via USB Cable";
-    Blockly.Msg.REPL_STARTING_EMULATOR = "Starting the Android Emulator<br/>Please wait: This might take a minute or two.";
-    Blockly.Msg.REPL_CONNECTING = "Connecting...";
-    Blockly.Msg.REPL_CANCEL = "Cancel";
-    Blockly.Msg.REPL_GIVE_UP = "Give Up";
-    Blockly.Msg.REPL_KEEP_TRYING = "Keep Trying";
-    Blockly.Msg.REPL_CONNECTION_FAILURE1 = "Connection Failure";
-    Blockly.Msg.REPL_NO_START_EMULATOR = "We could not start the MIT AI Companion within the Emulator";
-    Blockly.Msg.REPL_PLUGGED_IN_Q = "Plugged In?";
-    Blockly.Msg.REPL_AI_NO_SEE_DEVICE = "AI2 does not see your device, make sure the cable is plugged in and drivers are correct.";
+    Blockly.Msg.REPL_UPDATE_NO_UPDATE = "Kein Update ist verfügbar";
+    Blockly.Msg.REPL_UPDATE_NO_CONNECTION = "Sie müssen mit einem Companion verbunden sein, um ihn zu aktualisieren";
+    Blockly.Msg.REPL_UNABLE_TO_UPDATE = "Update kann nicht an Gerät/Emulator gesendet werden";
+    Blockly.Msg.REPL_UNABLE_TO_LOAD = "Update kann nicht vom App Inventor Server geladen werden";
+    Blockly.Msg.REPL_UNABLE_TO_LOAD_NO_RESPOND = "Update kann nicht vom App Inventor Server geladen werden (Server antwortet nicht)";
+    Blockly.Msg.REPL_NOW_DOWNLOADING = "Das Update wird nun vom App Inventor Server heruntergeladen, bitte warten Sie";
+    Blockly.Msg.REPL_RUNTIME_ERROR = "Laufzeitfehler";
+    Blockly.Msg.REPL_NO_ERROR_FIVE_SECONDS = "<br/><i>Bemerkung:</i>&nbsp;Sie werden in den nächsten 5 Sekunden keinen weiteren Fehlerbericht sehen.";
+    Blockly.Msg.REPL_CONNECTING_USB_CABLE = "Verbindung wird mittels USB Kabel hergestellt";
+    Blockly.Msg.REPL_STARTING_EMULATOR = "Android Emulator wird gestartet<br/>Bitte warten: Das könnte ein oder zwei Minuten dauern.";
+    Blockly.Msg.REPL_CONNECTING = "Verbindung wird hergestellt...";
+    Blockly.Msg.REPL_CANCEL = "Abbrechen";
+    Blockly.Msg.REPL_GIVE_UP = "Aufgeben";
+    Blockly.Msg.REPL_KEEP_TRYING = "Weiter versuchen";
+    Blockly.Msg.REPL_CONNECTION_FAILURE1 = "Verbindungsfehler";
+    Blockly.Msg.REPL_NO_START_EMULATOR = "Der MIT AI Companion konnte innerhalb des Emulators nicht gestartet werden";
+    Blockly.Msg.REPL_PLUGGED_IN_Q = "Eingesteckt?";
+    Blockly.Msg.REPL_AI_NO_SEE_DEVICE = "AI2 kann Ihr Gerät nicht sehen. Bitte versichern sie Sie, dass das Kabel eingesteckt ist und alle Treiber richtig installiert sind.";
     Blockly.Msg.REPL_HELPER_Q = "Helper?";
-    Blockly.Msg.REPL_HELPER_NOT_RUNNING = 'The aiStarter helper does not appear to be running<br /><a href="http://appinventor.mit.edu" target="_blank">Need Help?</a>';
-    Blockly.Msg.REPL_USB_CONNECTED_WAIT = "USB Connected, waiting ";
-    Blockly.Msg.REPL_SECONDS_ENSURE_RUNNING = " seconds to ensure all is running.";
-    Blockly.Msg.REPL_EMULATOR_STARTED = "Emulator started, waiting ";
-    Blockly.Msg.REPL_STARTING_COMPANION_ON_PHONE = "Starting the Companion App on the connected phone.";
-    Blockly.Msg.REPL_STARTING_COMPANION_IN_EMULATOR = "Starting the Companion App in the emulator.";
-    Blockly.Msg.REPL_COMPANION_STARTED_WAITING = "Companion starting, waiting ";
-    Blockly.Msg.REPL_VERIFYING_COMPANION = "Verifying that the Companion Started....";
-    Blockly.Msg.REPL_CONNECT_TO_COMPANION = "Connect to Companion";
-    Blockly.Msg.REPL_TRY_AGAIN1 = "Failed to Connect to the MIT AI2 Companion, try again.";
-    Blockly.Msg.REPL_YOUR_CODE_IS = "Your code is";
-    Blockly.Msg.REPL_DO_YOU_REALLY_Q = "Do You Really?";
-    Blockly.Msg.REPL_FACTORY_RESET = 'This will attempt to reset your Emulator to its "factory" state. If you had previously updated the Companion installed in the Emulator, you will likely have to do this again.';
+    Blockly.Msg.REPL_HELPER_NOT_RUNNING = 'Der aiStarter helper scheint nicht zu laufen<br /><a href="http://appinventor.mit.edu" target="_blank">Hilfe benötigt?</a>';
+    Blockly.Msg.REPL_USB_CONNECTED_WAIT = "USB verbunden, wartet ";
+    Blockly.Msg.REPL_SECONDS_ENSURE_RUNNING = " Sekunden um sicherzustellen, dass alles läuft.";
+    Blockly.Msg.REPL_EMULATOR_STARTED = "Emulator gestartet, wartet ";
+    Blockly.Msg.REPL_STARTING_COMPANION_ON_PHONE = "Companion App wird auf dem verbundenen Smartphone gestartet.";
+    Blockly.Msg.REPL_STARTING_COMPANION_IN_EMULATOR = "Companion App wird im Emulator gestartet.";
+    Blockly.Msg.REPL_COMPANION_STARTED_WAITING = "Companion wird gestartet, wartet ";
+    Blockly.Msg.REPL_VERIFYING_COMPANION = "Überprüfung, dass der Companion gestartet ist....";
+    Blockly.Msg.REPL_CONNECT_TO_COMPANION = "Mit Companion verbinden";
+    Blockly.Msg.REPL_TRY_AGAIN1 = "Verbindung zum MIT AI2 Companion fehlgeschlagen, bitte versuchen Sie es erneut.";
+    Blockly.Msg.REPL_YOUR_CODE_IS = "Ihr Code ist";
+    Blockly.Msg.REPL_DO_YOU_REALLY_Q = "Möchten Sie wirklich?";
+    Blockly.Msg.REPL_FACTORY_RESET = 'Es wird versucht, Ihren Emulator auf den Werkzustand zurückzusetzen. Wenn Sie zuvor den Companion im Emulator aktualisiert haben, werden Sie dies wahrscheinlich erneut machen müssen.';
 
 // Messages from Blockly.js
-    Blockly.Msg.WARNING_DELETE_X_BLOCKS = "Are you sure you want to delete all %1 of these blocks?";
+    Blockly.Msg.WARNING_DELETE_X_BLOCKS = "Sind Sie sich sicher, dass Sie alle %1 dieser Blöcke löschen möchten?";
 
 // Blocklyeditor.js
-    Blockly.Msg.GENERATE_YAIL = "Generate Yail";
-    Blockly.Msg.DO_IT = "Do It";
-    Blockly.Msg.CLEAR_DO_IT_ERROR = "Clear Error";
-    Blockly.Msg.CAN_NOT_DO_IT = "Cannot Do it";
-    Blockly.Msg.CONNECT_TO_DO_IT = 'You must be connected to the companion or emulator to use "Do It"';
+    Blockly.Msg.GENERATE_YAIL = "Erstelle YAIL";
+    Blockly.Msg.DO_IT = "Mache es";
+    Blockly.Msg.CLEAR_DO_IT_ERROR = "Fehler beheben";
+    Blockly.Msg.CAN_NOT_DO_IT = "Kann es nicht machen";
+    Blockly.Msg.CONNECT_TO_DO_IT = 'Sie müssen mit dem Companion oder Emulator verbunden sein, um "Mache es" zu nutzen';
 
 // Clock Component Menu Items
-    Blockly.Msg.TIME_YEARS = "Years";
-    Blockly.Msg.TIME_MONTHS = "Months";
-    Blockly.Msg.TIME_WEEKS = "Weeks";
-    Blockly.Msg.TIME_DAYS = "Days";
-    Blockly.Msg.TIME_HOURS = "Hours";
-    Blockly.Msg.TIME_MINUTES = "Minutes";
-    Blockly.Msg.TIME_SECONDS = "Seconds";
-    Blockly.Msg.TIME_DURATION = "Duration";
+    Blockly.Msg.TIME_YEARS = "Jahre";
+    Blockly.Msg.TIME_MONTHS = "Monate";
+    Blockly.Msg.TIME_WEEKS = "Wochen";
+    Blockly.Msg.TIME_DAYS = "Tage";
+    Blockly.Msg.TIME_HOURS = "Stunden";
+    Blockly.Msg.TIME_MINUTES = "Minuten";
+    Blockly.Msg.TIME_SECONDS = "Sekunden";
+    Blockly.Msg.TIME_DURATION = "Dauer";
   }
 };
 
